@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clamp : CSS Responsive fonts</title>
+</head>
+
+<!--
+The clamp() CSS function clamps a value between an upper and lower bound.
+clamp() enables selecting a middle value within a range of values between a defined minimum and maximum.
+It takes three parameters: a minimum value, a preferred value, and a maximum allowed value.
+The clamp() function can be used anywhere a <length>, <frequency>, <angle>, <time>, <percentage>, <number>, or <integer> is allowed.
+
+clamp(MIN, VAL, MAX) is resolved as max(MIN, min(VAL, MAX))
+-->
+
+<style>
+    :root {
+        --global-h1-size: clamp(1rem, (-0.875rem) + 8.333333333333332vw, 3.5rem);
+    }
+
+    .container {
+        max-width: 1280px;
+        margin: 100px auto;
+    }
+
+    h1,
+    .responsive-using-clamp {
+        --font-size: var(--global-h1-size);
+        font-size: var(--font-size);
+    }
+
+    .fixed-font-override {
+        --font-size: 2.5rem;
+    }
+</style>
+
+<body>
+<ma class="container">
+    <h1>
+        This is a heading that is fully responsive
+    </h1>
+    <h2 class="responsive-using-clamp">
+        This is a heading that is fully responsive
+    </h2>
+    <h2 class="responsive-using-clamp fixed-font-override">
+        This is a heading that is fully responsive
+    </h2>
+</ma>
+</body>
+
+<script>
+    // Takes the viewport widths in pixels and the font sizes in rem
+    function clampBuilder(minWidthPx, maxWidthPx, minFontSize, maxFontSize) {
+        const root = document.querySelector("html");
+        const pixelsPerRem = Number(getComputedStyle(root).fontSize.slice(0, -2));
+
+        const minWidth = minWidthPx / pixelsPerRem;
+        const maxWidth = maxWidthPx / pixelsPerRem;
+
+        const slope = (maxFontSize - minFontSize) / (maxWidth - minWidth);
+        const yAxisIntersection = -minWidth * slope + minFontSize
+
+        return `clamp( ${minFontSize}rem, ${yAxisIntersection}rem + ${slope * 100}vw, ${maxFontSize}rem )`;
+    }
+
+    console.log(clampBuilder(360, 840, 1, 3.5))
+</script>
+
+</html>
