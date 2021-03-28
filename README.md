@@ -2,14 +2,24 @@
 
 # CSS3 Effects
 
-Material simples com exemplos de CSS 
+<p>
+  Material simples com exemplos de CSS.<br/>
+  Simple material with examples of CSS.
+</p>
 
-* [Responsive fonts using css clamp()](https://github.com/JoseMateusCamargo/css-effects/blob/main/clamp_responsive_font.html)
-* [Float buttons](https://github.com/JoseMateusCamargo/css-effects/tree/main/floating_button)
-* [Efeito glowing em texto](https://github.com/JoseMateusCamargo/css-effects/blob/main/glowing_text.html)
-* [Efeito glowing em borda](https://github.com/JoseMateusCamargo/css-effects/blob/main/glowing_border.html)
+
+* [Take Darkened the Button Using <b>Brightness</b>](https://github.com/JoseMateusCamargo/css-effects/blob/main/filter_property_brightness.html)
+* [Responsive Fonts Using CSS <b>clamp()</b>](https://github.com/JoseMateusCamargo/css-effects/blob/main/clamp_responsive_font.html)
+* [Float Buttons](https://github.com/JoseMateusCamargo/css-effects/tree/main/floating_button)
+* [Glowing Effect in Text](https://github.com/JoseMateusCamargo/css-effects/blob/main/glowing_text.html)
+* [Glowing effect on the border](https://github.com/JoseMateusCamargo/css-effects/blob/main/glowing_border.html)
 * [Stick social bar](https://github.com/JoseMateusCamargo/css-effects/blob/main/sticky_social_bar.html)
+* [Fullscreen Video](https://github.com/JoseMateusCamargo/css-effects/blob/main/filter_property_brightness.html)
+* [Clip-Path Revealing Slider](https://github.com/JoseMateusCamargo/css-effects/tree/main/clip_path_revealing_slider)
 
-## Direitos de uso
+### Direitos de uso (Use rights)
 
-Você tem todo o direito de usar esse material para seu próprio aprendizado.
+<p>
+  Você tem todo o direito de usar esse material para seu próprio aprendizado.<br/>
+  You can use this material for your own learning.
+</p> 
