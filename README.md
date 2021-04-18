@@ -16,6 +16,8 @@
 * [Stick social bar](https://github.com/JoseMateusCamargo/css-effects/blob/main/sticky_social_bar.html)
 * [Fullscreen Video](https://github.com/JoseMateusCamargo/css-effects/blob/main/filter_property_brightness.html)
 * [Clip-Path Revealing Slider](https://github.com/JoseMateusCamargo/css-effects/tree/main/clip_path_revealing_slider)
+* [How To Create a Typing Effect](https://github.com/JoseMateusCamargo/css-effects/blob/main/typewriter_effect.html)
+
 
 ### Direitos de uso (Use rights)
 
