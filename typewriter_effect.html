@@ -47,12 +47,12 @@
 <h1>Hello everybody !!!</h1>
 
 <script>
-    function typeWriter(elemento) {
-        const array = elemento.innerHTML.split('')
-        elemento.innerHTML = ''
+    function typeWriter(element) {
+        const array = element.innerHTML.split('')
+        element.innerHTML = ''
 
         array.forEach((word, i) => {
-            setTimeout(() => elemento.innerHTML += word, 75 * i)
+            setTimeout(() => element.innerHTML += word, 75 * i)
         })
     }
 
