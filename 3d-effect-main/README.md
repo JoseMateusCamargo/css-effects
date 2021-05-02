@@ -1,4 +1,4 @@
-<img src="img/Screenshot.png" align="right" width="300">
+<img src="img/Screenshot.png" align="right" width="500">
 
 # 3D Effects
 
