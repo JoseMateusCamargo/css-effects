@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MovingGradient</title>
+</head>
+
+<style>
+    .main {
+        background-image: linear-gradient(to bottom right, #4affde 0%, #5b9dff 40%, #d06bff 60%, #ff34d2 100%);
+        background-size: 200% 200%;
+        animation: movingGradient 5s linear infinite alternate;
+    }
+
+    @keyframes movingGradient {
+        from {
+            background-position: 0 0;
+        }
+        to {
+            background-position: 100% 100%
+        }
+    }
+
+    #app {
+        width: 600px;
+        height: 300px;
+        margin: 50px;
+        border-radius: 25px;
+    }
+
+    .msg {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: bold;
+        font-family: 'Courier New', Courier, monospace;
+    }
+</style>
+
+<body>
+
+<div id="app" class="main">
+    <div class="msg">Hello guys!</div>
+</div>
+
+</body>
+</html>
